@@ -1,0 +1,96 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="WpfDemo.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid x:Name="gridMain" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="70*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Background="LightBlue" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="0" Grid.Column="0" Content="Column1"/>
+
+            <GridSplitter Width="5" Grid.Column="0"/>
+
+            <Label Background="LightGreen" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="0" Grid.Column="1" Content="Column2"/>
+
+
+            <Grid x:Name="gridRightColumn" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="HotPink" Content="Row1"/>
+
+                <Grid Grid.Row="0" Grid.Column="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="Cell11"/></TextBlock>
+
+                    <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="Cell12"/></TextBlock>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="Cell21"/></TextBlock>
+
+                    <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="Cell22"/></TextBlock>
+
+                    <GridSplitter Width="5" Grid.RowSpan="2"/>
+
+                    <GridSplitter Height="5" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"/>
+                    <StackPanel Grid.Column="1" HorizontalAlignment="Right" Width="110" Height="68" VerticalAlignment="Top" Margin="0,-10,-28,0">
+                        <StackPanel.LayoutTransform>
+                            <RotateTransform Angle="30"></RotateTransform>
+                        </StackPanel.LayoutTransform>
+                        <Button Content="Show/Hide" x:Name="button1" Click="button1_Click" HorizontalAlignment="Left" Width="110" >
+                            <Button.ToolTip>
+                                <Grid>
+                                    <Label Content="this is a tooltip"></Label>
+                                </Grid>
+                            </Button.ToolTip>
+                            <Button.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-19.999999999999996"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Button.RenderTransform>
+                            <Button.LayoutTransform>
+                                <RotateTransform Angle="45"/>
+                            </Button.LayoutTransform>
+                        </Button>
+                    </StackPanel>
+
+                </Grid>
+
+                <GridSplitter Height="5" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="HotPink" Content="Row2"/>
+
+            </Grid>
+
+        </Grid>
+        
+        <Grid x:Name="layer2" Visibility="Visible" HorizontalAlignment="Left" Width="500" Margin="-45,0,0,0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Name="label1" Content="Layer2.c1" Grid.Column="1" Background="Bisque"/>
+            <GridSplitter Width="5" Grid.Column="1" Background="Black"/>
+            <Label Content="Layer2.c2" Grid.Column="2" Background="Beige"/>
+            <GridSplitter Width="5" Background="CadetBlue" Grid.Column="0"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="ZedGraphDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:zed="clr-namespace:ZedGraph;assembly=ZedGraph"
+        Title="MainWindow" Height="350" Width="525">
+    <!--
+    如何引用windows form控件
+    1.首先添加对如下两个dll文件的引用：WindowsFormsIntegration.dll， System.Windows.Forms.dll
+    2.在WPF的容器控件内如Grid内首先要添加WinForm控件的宿主容器WindowsFormsHost，用于衔接WPF和WinForm
+    -->
+    <Grid Name="grid1">
+        <WindowsFormsHost Name="host">
+            <zed:ZedGraphControl x:Name="zg1"></zed:ZedGraphControl>
+        </WindowsFormsHost>
+    </Grid>
+</Window>

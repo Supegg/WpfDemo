@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfGridSplitterDemo", "WpfGridSplitterDemo\WpfGridSplitterDemo.csproj", "{7E409E64-4C55-4628-9203-6617D6131F3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZedGraphDemo", "ZedGraphDemo\ZedGraphDemo.csproj", "{E6210E2E-3136-45FD-9E9E-B5DC6BCA56EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingTest", "BindingTest\BindingTest.csproj", "{F1CAD8E5-A770-4548-B540-06218AF63408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalon", "Avalon\Avalon.csproj", "{8FAA8EE2-BAD5-48DD-9A7D-9207C9993E27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDemo", "WpfDemo\WpfDemo.csproj", "{E90A892D-A7CD-4900-A46C-CC35FB69449F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnhandledExceptionHandler", "UnhandledExceptionHandler\UnhandledExceptionHandler.csproj", "{84E74043-B1FC-464D-B0E4-DA9B54FA418B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E409E64-4C55-4628-9203-6617D6131F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E409E64-4C55-4628-9203-6617D6131F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E409E64-4C55-4628-9203-6617D6131F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E409E64-4C55-4628-9203-6617D6131F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6210E2E-3136-45FD-9E9E-B5DC6BCA56EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6210E2E-3136-45FD-9E9E-B5DC6BCA56EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6210E2E-3136-45FD-9E9E-B5DC6BCA56EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6210E2E-3136-45FD-9E9E-B5DC6BCA56EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1CAD8E5-A770-4548-B540-06218AF63408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CAD8E5-A770-4548-B540-06218AF63408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CAD8E5-A770-4548-B540-06218AF63408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CAD8E5-A770-4548-B540-06218AF63408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FAA8EE2-BAD5-48DD-9A7D-9207C9993E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FAA8EE2-BAD5-48DD-9A7D-9207C9993E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FAA8EE2-BAD5-48DD-9A7D-9207C9993E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FAA8EE2-BAD5-48DD-9A7D-9207C9993E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E90A892D-A7CD-4900-A46C-CC35FB69449F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E90A892D-A7CD-4900-A46C-CC35FB69449F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E90A892D-A7CD-4900-A46C-CC35FB69449F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E90A892D-A7CD-4900-A46C-CC35FB69449F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E74043-B1FC-464D-B0E4-DA9B54FA418B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E74043-B1FC-464D-B0E4-DA9B54FA418B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E74043-B1FC-464D-B0E4-DA9B54FA418B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E74043-B1FC-464D-B0E4-DA9B54FA418B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
